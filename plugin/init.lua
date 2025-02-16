@@ -124,6 +124,10 @@ local mappings = {
 	latte = "Catppuccin Latte",
 }
 
+function M.get_color(flavor, color)
+	return colors[flavor][color]
+end
+
 function M.select(palette, flavor, accent)
 	local c = palette[flavor]
 	-- shorthand to check for the Latte flavor
